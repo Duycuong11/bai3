@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .form-control {
+        display: flex;
+      }
+
+      #content {
+        padding: 5px;
+        height: 40px;
+        width: 400px;
+        resize: none;
+      }
+
+      .form-control button {
+        height: 50px;
+        line-height: 50px;
+        border: none;
+        padding: 5px;
+        background: #ddd;
+        text-align: center;
+        width: 80px;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+      #list-task {
+        width: 600px;
+      }
+      #list-task h4 {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-control">
+      <textarea
+        name="content"
+        id="content"
+        placeholder="your task name"
+      ></textarea>
+      <button id="addTask">Add task</button>
+    </div>
+
+    <div id="listtask">
+      <h4>Danh sách task</h4>
+      <div id="result">
+        <p>chưa có công việc</p>
+        <!-- <tr>
+          <td>i</td>
+          <td id="name">name</td>
+          <td>
+            <button onclick="editTask">Edit</button>
+            <button onclick="deleteTask">Delete</button>
+          </td>
+        </tr> -->
+      </div>
+    </div>
+    <script src="bai3.js"></script>
+  </body>
+</html>
