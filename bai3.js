@@ -24,7 +24,7 @@ function renderTable() {
 
 function addTask() {
   /**lấy giá trị của nametask */
-  var name = $("#name").val(); /**document.getElementById("").value*/
+  var name = $("#content").val(); /**document.getElementById("").value*/
 
   if (name === "") {
     /**nếu chưa nhập task thì hiển thị lỗi */
@@ -44,7 +44,7 @@ function addTask() {
     currentIndex = -1;
   }
   /**sau khi lưu thông tin task thì sẽ xóa giá trị đi */
-  $("#name").val("");
+  $("#content").val("");
 
   renderTable();
 }
@@ -55,7 +55,7 @@ function editTask(index) {
    */
   var task = tasks[index];
 
-  $("#name").val(task.name);
+  $("#content").val(task.name);
   /**update biến curentIndex bằng với index click cho edit */
   currentIndex = index;
 }
